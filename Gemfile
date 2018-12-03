@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "2.5.1"
 
 gem "acts_as_votable"
-gem "bootsnap", ">= 1.1.0", require: false
+gem "bootsnap", require: false
 gem "bootstrap-sass"
 gem "carrierwave"
 gem "carrierwave-base64"
@@ -21,16 +21,16 @@ gem "kaminari"
 gem "omniauth-facebook"
 gem "pg"
 gem "puma", "~> 3.11"
-gem "rails", "~> 5.2.1"
-gem "rails_admin"
-gem "ratyrate"
 gem "sass-rails", "~> 5.0"
-gem "sqlite3"
 gem "turbolinks", "~> 5"
 gem "tinymce-rails"
-gem "uglifier", ">= 1.3.0"
-gem "ransack"
 gem "truncate_html"
+gem "uglifier", ">= 1.3.0"
+gem "ratyrate"
+gem "ransack"
+gem "rails", "~> 5.2.1"
+gem "rails_admin"
+gem "rest-client", ">= 1.8.0"
 
 gem "social-share-button"
 group :development, :test do

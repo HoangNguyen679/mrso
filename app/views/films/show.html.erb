@@ -42,7 +42,8 @@
               <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower</p>
               <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower</p>
                   <div class="news_d_footer">
-                                    <%= social_share_button_tag("Film: " + @film.name + " in MRSO", :image => @film.picture_url) %>
+                    <%= social_share_button_tag("Film: " + @film.name + " in MRSO",
+                      :image => @film.picture_url, desc: @film.name) %>
 
                 </div>
                   </div>

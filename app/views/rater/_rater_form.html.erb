@@ -1,5 +1,5 @@
 <div id="rater_form">
 	<hr>
-                  <p>People rating number: <%= @review.rates("speed").count %></p>
-	<p>Score: <%= @review.average("speed").present? ? @review.average("speed").avg.round(1) : 0 %></p>
+  	<p>People rating number: <%= @review.rates("speed").count %></p>
+		<p>Score: <%= @review.average("speed").present? ? @review.average("speed").avg.round(1) : 0 %></p>
 </div>

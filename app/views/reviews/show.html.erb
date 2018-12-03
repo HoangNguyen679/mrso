@@ -16,13 +16,15 @@
           <%= render "rater/rater_form" %>
           <% if user_signed_in? %>
           <%= rating_for @review, "speed",
+            star_path: "/images/ratyrate",
             disable_after_rate: false %>
           <% end %>
                   <div class="news_d_footer">
                     <%= render partial: "reviews/likes" %>
                     <!-- <a class="justify-content-center ml-auto" href="#"><i class="lnr lnr lnr-bubble"></i>06 Comments</a> -->
                     <div class="news_socail ml-auto">
-                      <%= social_share_button_tag("Review for film: " + @film.name + " by " + @user.email + " in MRSO", :image => @film.picture_url) %>
+                      <%= social_share_button_tag("Review for film: " + @film.name + " by " + @user.email + " in MRSO",
+                        :image => @film.picture_url, desc: @film.name) %>
                     </div>
                   </div>
                   <div class="comment-form">
